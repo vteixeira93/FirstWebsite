@@ -1,0 +1,72 @@
+{% extends "template.njk" %}
+
+
+ <title>Learning Web Development</title>
+
+
+{% block content%}
+<!---------------------- Content -------------------!-->
+<div class="content">
+<h2>Checkout my Social media</h2>
+<br>
+<div class="box2">
+ <div align="center" class="table">
+  <table class="tiles">
+    <tr>
+     <td> <a href="https://www.facebook.com/vitor.h.teixeira.3/" target="_blank"><img src="./imgs/fblogo.png" width=75px alt="fblogo"></a>
+      <p> <a class="sociallinks" href="https://www.facebook.com/vitor.h.teixeira.3/" target="_blank">facebook.com</a> </td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+     <td> <a href="https://www.instagram.com/vitorhteixeira93/" target="_blank"><img src="./imgs/instalogo.png" width=75px alt="instalogo"></a>
+      <p> <a class="sociallinks" href="https://www.instagram.com/vitorhteixeira93/" target="_blank">instagram.com</a> </td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>     
+     <td> <a href="https://www.youtube.com/channel/UCOBP2C2mIBuUuwjQ5uz_EYw?view_as=subscriber" target="_blank"><img src="./imgs/ytlogo.png" width=130px alt="wordpress"></a>
+      <p> <a class="sociallinks" href="https://www.youtube.com/channel/UCOBP2C2mIBuUuwjQ5uz_EYw?view_as=subscriber" target="_blank">youtube.com</a> </td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+   </table>
+</div>
+ 
+</div>
+<br>
+<img id="blueline" src="./imgs/blueline.png" width=800 alt="sepp">
+<h2>Send me an email</h2>
+<div class="box2">
+ <form action="mailto:vteixeira93@hotmail.com" method="post" enctype="text/plain">
+  Name:<br>
+  <input type="text" name="name"><br>
+  Your e-mail:<br>
+  <input type="text" name="mail"><br>
+  Comment:<br>
+  <input type="text" name="comment" size="500" id="combox"><br><br>
+  <input type="submit" value="Send" class="subutton">
+  <input type="reset" value="Reset" class="subutton">
+  </form>
+  <h3>to vteixeira93@hotmail.com</h3>
+</div>
+<br>
+<img id="blueline" src="./imgs/blueline.png" width=800 alt="sepp">
+<h2>Add me on</h2>
+<br>
+<div class="box2">
+ <div align="center" class="table">
+  <table class="tiles">
+    <tr>
+     <td> <a href="https://www.discord.com" target="_blank"><img src="./imgs/discord.png" width=75px alt="disc"></a>
+      <p> <a class="sociallinks" href="https://www.discord.com/" target="_blank">Discord: Ragna#6989</a> </td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+     <td> <a href="https://steamcommunity.com/id/ragnairl/" target="_blank"><img src="./imgs/steamlogo.png" width=75px alt="steam"></a>
+      <p> <a class="sociallinks" href="https://steamcommunity.com/id/ragnairl/" target="_blank">Steam: Ragna</a> </td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>     
+     <td> <a href="https://my.playstation.com/profile/ThyRagna" target="_blank"><img src="./imgs/pslogo.png" width=90px alt="myps"></a>
+      <p> <a class="sociallinks" href="https://my.playstation.com/profile/ThyRagna" target="_blank">Playstation: ThyRagna</a> </td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+     <td> <a href="https://my.playstation.com/profile/ThyRagna" target="_blank"><img src="./imgs/bnetlogo.png" width=85px alt="battlenet"></a>
+      <p> <a class="sociallinks" href="https://my.playstation.com/profile/ThyRagna" target="_blank">Battlenet: Haramboi#2381</a> </td>
+    </tr>
+   </table>
+</div>
+ 
+</div>
+<br>
+<script src="scripts.js"></script>
+{% endblock %}

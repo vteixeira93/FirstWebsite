@@ -1,0 +1,59 @@
+{% extends "template.njk" %}
+
+
+ <title>Learning Web Development</title>
+
+
+{% block content%}
+<!---------------------- Content -------------------!-->
+<div class="content">
+
+<div class="box1">
+ <h2>Additional support & tools</h2>
+ <p>On the Internet, there are thousands and thousands of sites ready to teach you web development but which ones provide you with useful information and put you in the web developer path?</p>
+ <p>Listen down below are some of the best websites out there, (both free and/or paid), that can teach you how to code on an array of diferent applications and languages such as HTML, CSS, JavaScript, PHP and so on. Whats great about some of them is that they have challenges and exercises available for you to test your skills and submit your results.</p>
+ <p>I have used some of these websites and they have helped me a great deal!</p>
+ <h2>Check them out</h2>
+</div>
+
+<div class="linksdisplay">
+
+ {% for item in items %}
+    <div class="links-grid"> 
+        
+      <div class="links-box1"
+      style="background-image:url(./imgs/links/{{item.bgpic}}.png)">  
+      </div>
+
+      
+      
+      <div class="links-box2">
+        
+        <div class="links-box2-1">
+        <p>{{item.nameof}}</p>
+        </div>
+
+        <div class="links-box2-2">
+        <p>{{item.webinfo}}</p>
+        </div>
+
+        <div class="links-box2-3">
+
+          <div class="links-box2-3-1">
+          Cost: <span style="color: rgba(221, 255, 70, 0.8)">{{item.price}}</span>
+          </div>
+
+          <div class="links-box2-3-2">
+          <a href="{{item.ip}}" target="_blank">Visit website</a>
+          </div>
+
+        </div>
+
+      </div>
+  
+    </div>
+{% endfor %}
+</div>
+
+<script src="scripts.js"></script>
+{% endblock %}}

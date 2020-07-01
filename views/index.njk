@@ -1,0 +1,110 @@
+{% extends "template.njk" %}
+
+
+ <title>Learning Web Development</title>
+
+
+
+{% block content%}
+<!---------------------- Content -------------------!-->
+<div class="content">
+<h2>Introduction</h2> <br>
+<div class="box1">
+<p>Hello, welcome to my website! In this website I am covering the basics of HTML5, CSS and JavaScript by implementing what I learn, step by step, into here.</p>
+<p>Hopefully I will be able to guide you through the starting steps that I took into learning Web development, and maybe spark a hidden passion for coding in you! </p>
+<img id="codingimg" src="/imgs/coding.png" alt="coding">
+</div>
+<img id="blueline" src="/imgs/blueline.png" width=800 alt="sepp">
+<h2>Wanna be a front-end developer?</h2>
+<h3>Learn and master the absolute essentials</h3>
+<br>
+<table>
+ <tr>
+  <td><img src="/imgs/html5logo.png" width=75px alt="html5">
+    <p>HTML5</td>
+  <td>|</td>
+  <td><img src="/imgs/csslogo.png" width=75px alt="css3">
+    <p>CSS3</td>
+  <td>|</td>
+  <td><img src="/imgs/jslogo.png" width=75px alt="javascript">
+    <p>JavaScript</td>
+ </tr>
+</table>
+<h3>What is HTML?</h3>
+<div class="box2">
+  <p>HTML is a programming language whose acronym stands for Hyper Text Markup Language.
+  It is a system that allows the modification of the appearance of web pages, as well as making adjustments to their appearance.
+  It is used to structure and present content for the web.
+  <p>With HTML5, browsers like Firefox, Chrome, Explorer, Safari and more, can know how to display a particular web page,
+  know where the elements are, where to put the images and where to place the text.
+  <p>Apart from HTML5, there are other languages that are necessary to give format and
+  interactivity to a site, but the basic structure of any page is first defined in the HTML5 language.
+  </div>
+<h3>What is CSS?</h3>
+<div class="box2">
+  <p>CSS stands for Cascading Style Sheets with an emphasis placed on “Style.” While HTML is used to structure a web document (defining things 
+  like headlines and paragraphs, and allowing you to embed images, video, and other media), CSS comes through and specifies your document’s style—page layouts,
+  colors, and fonts are all determined with CSS.
+  <p>Think of HTML as the foundation (every house has one),
+  and CSS as the aesthetic choices (there’s a big difference between a Victorian mansion and a mid-century modern home).
+</div>
+<h3>What is JavaScript?</h3>
+<div class="box2">
+  <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages, every time a web page does more than just sit there and display
+  static information for you to look at, displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
+</div>
+<br>
+
+<img id="blueline" src="/imgs/blueline.png" width=800 alt="sepp">
+
+<h2>What you will also need to learn</h2>
+<h3>A basic understanding of these tools is crucial as a front-end developer.</h3>
+<br>
+<div align="center" class="table">
+  <table class="tiles">
+    <tr>
+     <td><img src="/imgs/reactlogo.png" width=110px alt="reactlogo">
+      <p>React</td>
+     <td>|</td>
+     <td><img src="/imgs/sqllogo.png" width=120px height=75px alt="mysqllogo">
+      <p>MySQL</td>
+     <td>|</td>
+     <td><img src="/imgs/phplogo.png" width=75px alt="javascript">
+      <p>PHP</td>
+    </tr>
+   </table>
+</div>
+
+<h3>What is React?</h3>
+<div class="box2">
+  <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces.</p>
+  <p>It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
+
+  </div>
+<h3>What is MySQL?</h3>
+<div class="box2">
+  <p>MySQL is a relational database management system based on SQL – Structured Query Language. The application is used for a wide range of purposes, including data warehousing, e-commerce, and logging applications.
+
+  <p>The most common use for mySQL however, is for the purpose of a web database. It can be used to store anything from a single record of information to an entire inventory of available products for an online store.
+  
+  <p>In association with a scripting language such as PHP it is possible to create websites which will interact in real-time with a mySQL database to rapidly display categorised and searchable information to a website user.  
+</div>
+<h3>What is PHP?</h3>
+<div class="box2">
+<p>PHP (an acronym for PHP: Hypertext Preprocessor) is a scripting language that’s generally used in “server-side” web development. Scripting languages are a subset of coding languages used to automate processes that otherwise would need to be executed step-by-step in a site’s code every time they occur.
+
+ <p>This includes things like dialogue boxes opening on a screen in response to a user’s actions, chatbots responding to defined user behavior with corresponding messages, or animation that happens when a user scrolls past a certain point on a page, any dynamic website functions that need to occur on screen without the user having to manually reload a site.</p> 
+
+</div>
+<img id="blueline" src="/imgs/blueline.png" width=800 alt="sepp">
+<div id="leavereview">
+  <form action="review" method="">
+    <h3>Let me know how I can improve</h3>
+  <label for="review">By leaving a review :)</label>
+  <br>
+  <input type="text" name="review" id="combox"> <br>
+  <input type="submit" value="send" class="subutton">
+</form>
+</div>
+<script src="scripts.js"></script>
+{% endblock %}

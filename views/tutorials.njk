@@ -1,0 +1,85 @@
+{% extends "template.njk" %}
+
+
+ <title>Learning Web Development</title>
+
+
+{% block content%}
+<!---------------------- Content -------------------!-->
+<div class="content">
+
+<div class="box1">
+<h2>Where do I start?</h2>
+<p>Here is an arranged "8 step" path of learning that you can follow in onder to become a Web Developer like us.</p>
+<p>Depending on what you would like to focus on, either Front-end or Back-end, there are 8 FREE tutorial videos in this learning plan that I have set out for you.</p>
+<p>All this content was made by amazing Developers that take hours on end out of their own free time to teach and guide people who are eager to learn Web Development.</p>
+</div>
+
+<h3>Please show them your support by subscribing to their YouTube channels :)</h3>
+<img id="blueline" src="/imgs/blueline.png" width=800 alt="sepp">
+<section class="tutcards">
+
+ {% for item in items %}
+    <div class="card"> 
+
+      <div class="tutcards-img-container">
+        <img src="http://i3.ytimg.com/vi/{{item.id}}/maxresdefault.jpg" alt="{{item.title}}'s logo">
+      </div>
+    
+      <div class="card-text">
+
+        <div class="tutcards-title">
+          <p>{{item.title}}</p>
+        </div>
+        <div class="duration">
+          <p>Duration: {{item.duration}}</p>
+        </div>
+        <div class="tutcards-info">
+          <a class="videos" href="https://www.youtube.com/channel/{{item.ytchannel}}" target="_blank"> <img src="/imgs/ytchan.png" width="20px" alt="yt channel">    Channel</a>
+          <a class="videos" id="{{item.id}}">Watch Tutorial</a>
+        </div>
+
+      </div>
+  
+    </div>
+{% endfor %}
+</section>
+
+
+
+<div class="model-overlay">
+  <div class="model">
+
+    <a class="close-model">
+      <i class="material-icons">close</i>
+    </a>
+
+    <div class="model-content">
+      <iframe src=""
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<img id="blueline" src="./imgs/blueline.png" width=800 alt="sepp">
+
+<h3> You can also check out these tutorials on YouTube </h3> <br>
+  <div class="table" style="background-color:rgba(255, 255, 255, 0.01);">
+   <table class="tiles">
+     <tr>
+      <td> <a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc" target="_blank"><img src="./imgs/gitlogo.png" width=75px alt="gitlogo"></a>
+       <p> <a class="sociallinks" href="https://www.youtube.com/watch?v=SWYqp7iY_Tc" target="_blank">GitHub</a> </td>
+      <td>|</td>
+      <td> <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0" target="_blank"><img src="./imgs/reactlogo.png" width=110px alt="reactlogo"></a>
+       <p> <a class="sociallinks" href="https://www.youtube.com/watch?v=Ke90Tje7VS0" target="_blank">REACT</a> </td>
+      <td>|</td>     
+      <td> <a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank"><img src="./imgs/ptlogo.png" width=75px alt="pythonlogo"></a>
+       <p> <a class="sociallinks" href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">Python</a> </td>
+     </tr>
+    </table>
+
+
+ </div>
+ <script src="scripts.js"></script>
+{% endblock %}

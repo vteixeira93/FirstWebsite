@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Learning Web Development</title>
+<!-- --------------------STYLING-------------------------!-->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<!-- --------------------THE WEBSITE----------------------------------------------- -->
+<body>
+<div class="wrapper">
+
+<div class="headcontainer" id="myHeader">
+
+<div class="header">
+  <img id="titleimg" src="/imgs/title.png" alt="titleimg">
+<a href="/">My very own first website, the tale.</a>
+</div> 
+<div class="menu">
+  
+  <a href="/"><img src="/imgs/menu/homebtn.png" 
+onmouseover="this.src='/imgs/menu/homebtn-hover.png'"
+onmouseout="this.src='/imgs/menu/homebtn.png'" /></a>
+
+<a href="/about"><img src="/imgs/menu/aboutbtn.png" 
+onmouseover="this.src='/imgs/menu/aboutbtn-hover.png'"
+onmouseout="this.src='/imgs/menu/aboutbtn.png'" /></a>
+  
+<a href="/tutorials"><img src="/imgs/menu/tutorialsbtn.png" 
+onmouseover="this.src='/imgs/menu/tutorialsbtn-hover.png'"
+onmouseout="this.src='/imgs/menu/tutorialsbtn.png'" /></a>
+
+<a href="/links"><img src="/imgs/menu/linksbtn.png" 
+onmouseover="this.src='/imgs/menu/linksbtn-hover.png'"
+onmouseout="this.src='/imgs/menu/linksbtn.png'" /></a>
+
+<a href="/contactme"><img src="/imgs/menu/contactbtn.png" 
+onmouseover="this.src='/imgs/menu/contactbtn-hover.png'"
+onmouseout="this.src='/imgs/menu/contactbtn.png'" /></a>
+</div>
+
+</div>
+
+ <!---------------------- Content ------------------!-->
+
+<div class="page">
+
+<img id="blueline" src="/imgs/blueline.png" width=800 alt="sepp">
+
+
+{% block content %} {% endblock %}
+
+
+<img id="blueline" src="/imgs/blueline.png" width=800 alt="sepp">
+<!-- SCRIPTZ AND JQUERY !-->
+
+<script src="scripts.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 0){
+      $(".headcontainer").css({"background" : "rgba(0, 0, 0, 1)"})
+      }
+      else {
+        $(".headcontainer").css({"background" : "rgba(0, 0, 0, 0.5"})
+        }
+      })
+    })
+  </script>
+
+
+</div>
+
+</div>
+</body>
+</html>
