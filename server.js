@@ -30,6 +30,7 @@ server.get("/about", function(req, res) {
  return res.render("about") 
 })
 
-server.listen(5000, function(){
+var addPort = process.env.PORT || 3000
+server.listen(addPort, function(){
  console.log("Server is online")
 })
